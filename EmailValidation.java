@@ -8,7 +8,7 @@ public class EmailValidation {
 		System.out.println("......Email Validation......");
 		System.out.println("Enter Your Email Id");
 		String emailId = scan.nextLine();
-		String regex = "^[a-zA-Z0-9]+[@]+[a-zA-Z]+[.]+[a-zA-Z]{2,4}";
+		String regex = "^[a-zA-Z0-9]+[_+-.]*+[a-zA-Z0-9]+[@]+[a-zA-Z]+[.]+[a-zA-Z]{2,4}";
 			if (emailId.matches(regex)) {
 				System.out.println("This Email Id Is Valid");
 
